@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --Darkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: var(--Darkcyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+/* ====================CONNTROLLING SVG's============================== */
+
+/* ===============================ALL BOXES===================================== */
+.upper-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+.mainbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 0rem 0rem 0rem;
+}
+
+.maincont {
+    background-color: white;
+    width: 380px;
+    height: 360px;
+    overflow: hidden;
+    border-radius: 15px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.contbox {
+    background-color: white;
+}
+
+/* ====================HEADER========================== */
+.header>img {
+    width: 100%;
+    height: 100px;
+}
+
+/* ============================P F P=============================== */
+.victor>img {
+    position: relative;
+    top: -50px;
+    bottom: 0px;
+    border-radius: 50px;
+    border: 5px solid white;
+    overflow: hidden;
+}
+
+/* ===============================PROFILE=========================== */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 3rem 0rem 3rem;
+    height: 1.5rem;
+    /* font-size: 1rem; */
+}
+
+.profile>h2 {
+    margin: 0px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.pro-para>p {
+    margin: 0px;
+    padding: 0.2rem 0.6rem 0.2rem 0.6rem;
+    color: var(--Darkgray);
+}
+
+#london {
+    margin: 0.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    color: var(--Darkgray);
+}
+
+/* =======================STAT BOX=========================== */
+.statbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 2px solid hsl(0, 0%, 90%);
+}
+
+.followers>p {
+    color: gray;
+    font-size: 0.8rem;
+    margin: 0px;
+}
+
+.likes>p {
+    color: gray;
+    font-size: 0.8rem;
+    margin: 0px;
+}
+
+.photos>p {
+    color: gray;
+    font-size: 0.8rem;
+    margin: 0px;
+}
+
+.followers>h2 {
+    margin: 1.2rem 0rem 0.5rem 0rem;
+}
+
+.likes>h2 {
+    margin: 1.2rem 0rem 0.5rem 0rem;
+}
+
+.photos>h2 {
+    margin: 1.2rem 0rem 0.5rem 0rem;
+}
+
+@media (min-width: 200px) and (max-width: 440px){
+    .maincont {
+        background-color: white;
+        width: 300px;
+        height: 360px;
+        overflow: hidden;
+        border-radius: 15px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+}
+@media (min-width: 100px) and (max-width: 340px){
+    .maincont {
+        background-color: white;
+        width: 250px;
+        height: 480px;
+        overflow: hidden;
+        border-radius: 15px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .statbox {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        border-top: 2px solid hsl(0, 0%, 90%);
+    }
+
+    .profile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media (min-width: 100px) and (max-width: 280px){
+    .maincont {
+        background-color: white;
+        width: 220px;
+        height: 480px;
+        overflow: hidden;
+        border-radius: 15px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .statbox {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        border-top: 2px solid hsl(0, 0%, 90%);
+    }
+
+    .profile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
